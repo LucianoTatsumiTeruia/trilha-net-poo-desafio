@@ -3,17 +3,18 @@ using DesafioPOO.Models;
 
 // Alguns testes realizados com as classes Nokia e Iphone
 
+Console.WriteLine($"Testes realizados para a classe Nokia:\n");
 Nokia n1 = new Nokia(numero: "123", modelo: "Modelo 0", imei: "1111", memoria: 256);
 Console.WriteLine($"Smartphone da Nokia de número {n1.Numero}:");
 n1.Ligar();
 n1.InstalarAplicativo("Pokémon GO");
 n1.ReceberLigacao();
-n1.Numero = "123";
+n1.Numero = "456";
 Console.WriteLine($"O número do smartphone da Nokia foi alterado para: {n1.Numero}");
 
-Console.WriteLine("\n");
+Console.WriteLine("\n\n");
 
-
+Console.WriteLine($"Testes realizados para a classe Iphone:\n");
 Iphone i1 = new Iphone(numero: "456", modelo: "Modelo 1", imei: "2222", memoria: 128);
 Console.WriteLine($"Smartphone do Iphone de número {i1.Numero}:");
 i1.ReceberLigacao();
